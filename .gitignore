@@ -1,0 +1,75 @@
+# ========== 用户指定忽略 ==========
+doc/
+drawio/
+
+
+# ========== 操作系统 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+
+# ========== 编辑器 / IDE ==========
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+.apt_generated
+
+
+# ========== Java / Maven (server) ==========
+target/
+build/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+
+# ========== Node / Vue (mall-client) ==========
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.eslintcache
+*.tsbuildinfo
+*.timestamp-*-*.mjs
+
+
+# ========== 环境变量 / 密钥 ==========
+.env
+.env.local
+.env.*.local
+
+
+# ========== 日志 ==========
+logs/
+*.log
+
+
+# ========== TRAE / 临时 ==========
+.trae/
+.trae-html-share-packages/
+__screenshots__/

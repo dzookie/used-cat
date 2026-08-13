@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('@/assets/fonts/1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* #ff5000 */
+:root {
+  --primary-color: #ffe60f;
+  --bj-color: #f6f6f6;
+  --border-color: #c5c5c5;
+  --admin-primary: #ffe60f;
+  --admin-primary-light: #fffbeb;
+  --admin-primary-dark: #d4b800;
+  --admin-primary-rgb: 255, 230, 15;
+  --admin-bg-page: #f5f7fa;
+  --admin-bg-card: #ffffff;
+  --admin-bg-card-hover: #fafafa;
+  --admin-bg-header: rgba(255, 255, 255, 0.85);
+  --admin-bg-sidebar: #ffffff;
+  --admin-text-primary: #303133;
+  --admin-text-regular: #606266;
+  --admin-text-secondary: #909399;
+  --admin-text-placeholder: #c0c4cc;
+  --admin-border-light: #ebeef5;
+  --admin-border-lighter: #f2f6fc;
+  --admin-border-base: #dcdfe6;
+  --admin-sidebar-width: 220px;
+  --admin-sidebar-collapsed-width: 64px;
+  --admin-header-height: 60px;
+  --admin-content-padding: 24px;
+  --admin-shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --admin-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --admin-shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --admin-radius-sm: 4px;
+  --admin-radius-md: 8px;
+  --admin-radius-lg: 12px;
+  --admin-radius-xl: 16px;
+  --admin-radius-full: 9999px;
+  --admin-transition-fast: 0.2s ease;
+  --admin-transition-base: 0.3s ease-in-out;
+  --state-success: #67c23a;
+  --state-warning: #e6a23c;
+  --state-error: #f56c6c;
+  --state-info: #909399;
+}
+
+.el-message--success {
+  --el-message-bg-color: var(--primary-color) !important;
+  border: 2px solid #000 !important;
+  border-radius: 8px !important;
+}
+
+.el-message--success .el-message__icon {
+  color: #000 !important;
+}
+
+.el-message--success .el-message__content {
+  color: #333 !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.is-disabled).is-active {
+  background-color: var(--primary-color) !important;
+  color: #333 !important;
+  border-color: #000 !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.is-disabled):not(.is-active):hover {
+  color: #333 !important;
+}
+
+/* Element Plus 全局主题覆盖 */
+:root {
+  --el-color-primary: #ffe60f;
+  --el-color-primary-light-3: #ffe60f;
+  --el-color-primary-light-5: #fff159;
+  --el-color-primary-light-7: #fff8a3;
+  --el-color-primary-light-8: #fffabe;
+  --el-color-primary-light-9: #fffbeb;
+  --el-color-primary-dark-2: #d4b800;
+  --el-color-success: #67c23a;
+  --el-color-warning: #e6a23c;
+  --el-color-danger: #f56c6c;
+  --el-color-info: #909399;
+  --el-bg-color: #f5f7fa;
+  --el-bg-color-page: #f5f7fa;
+  --el-text-primary: #303133;
+  --el-text-regular: #606266;
+  --el-text-secondary: #909399;
+  --el-border-color: #dcdfe6;
+  --el-border-color-light: #ebeef5;
+  --el-border-color-lighter: #f2f6fc;
+  --el-border-radius-base: 8px;
+}
+
+.el-button--primary {
+  --el-button-bg-color: #ffe60f;
+  --el-button-border-color: #ffe60f;
+  --el-button-text-color: #1a1a2e;
+  --el-button-hover-bg-color: #ffd700;
+  --el-button-hover-border-color: #ffd700;
+  --el-button-hover-text-color: #1a1a2e;
+  --el-button-active-bg-color: #d4b800;
+  --el-button-active-border-color: #d4b800;
+  --el-button-active-text-color: #1a1a2e;
+  background-color: #ffe60f !important;
+  border-color: #ffe60f !important;
+  color: #1a1a2e !important;
+}
+
+body .el-button--primary:hover {
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  color: #1a1a2e !important;
+}
+
+body .el-button--primary:active {
+  background-color: #d4b800 !important;
+  border-color: #d4b800 !important;
+  color: #1a1a2e !important;
+}
+
+.el-button--primary.is-plain {
+  --el-button-bg-color: #fffbeb;
+  --el-button-border-color: #fffbeb;
+  --el-button-text-color: #d4b800;
+  --el-button-hover-bg-color: #ffe60f;
+  --el-button-hover-border-color: #ffe60f;
+  --el-button-hover-text-color: #1a1a2e;
+}
+
+.el-button--primary.is-link {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #d4b800 !important;
+}
+
+.el-button--primary.is-link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #e6c800 !important;
+}
+
+body {
+  --el-color-primary: #ffe60f;
+  --el-color-primary-light-3: #ffec4d;
+  --el-color-primary-light-5: #fff17a;
+  --el-color-primary-light-7: #fff7a8;
+  --el-color-primary-light-8: #fff9bf;
+  --el-color-primary-light-9: #fffbeb;
+  --el-color-primary-dark-2: #d4b800;
+}
+
+/* 隐藏 liaokit 链接 tooltip 残留元素 */
+.tooltip-element {
+  display: none !important;
+}
+
+/* ElMessageBox 确认按钮全局样式 */
+body .el-message-box .el-button--primary {
+  background-color: #ffe60f !important;
+  border-color: #ffe60f !important;
+  color: #1a1a2e !important;
+}
+
+body .el-message-box .el-button--primary:hover {
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  color: #1a1a2e !important;
+}
+
+body .el-message-box .el-button--primary:active {
+  background-color: #d4b800 !important;
+  border-color: #d4b800 !important;
+  color: #1a1a2e !important;
+}
+
+/* ElMessageBox 确定按钮（type="primary" 的确认按钮） */
+body .el-message-box__btns .el-button--primary {
+  background-color: #ffe60f !important;
+  border-color: #ffe60f !important;
+  color: #1a1a2e !important;
+}
+
+body .el-message-box__btns .el-button--primary:hover {
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+  color: #1a1a2e !important;
+}
+
+/* ElMessageBox 默认按钮 hover 状态也使用主题色 */
+body .el-message-box__btns .el-button:not(.el-button--primary):hover {
+  color: #d4b800 !important;
+  border-color: #ffe60f !important;
+}
